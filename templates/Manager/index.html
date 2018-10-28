@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+Admins Home page<br>
+<form  method="post" action={% url 'add' %}>
+    {% csrf_token %}
+    <input type="submit" name="Add" id="Add" value="ADD">
+</form>
+
+</body>
+</html>
