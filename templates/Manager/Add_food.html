@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Add Food Items</title>
 </head>
 <body>
 Add food items<br>
-<form  method="post">
+<form  method="post" action="{% url 'add' %}">
     {{ form.as_p }}
     {% csrf_token %}
     <input type="submit" value="ADD">

@@ -4,5 +4,6 @@ from Manager import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('add/', views.Add_food, name='add'),
+    path('add/', views.add_food, name='add'),
+    path('remove/', views.remove_food, name='remove'),
 ]

@@ -13,7 +13,7 @@ class Food_items(models.Model):
 
 
 class Quantity(models.Model):
-    Food_id = models.ForeignKey(Food_items, on_delete=models.PROTECT)
+    Food_id = models.ForeignKey(Food_items, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
 
     def __str__(self):

@@ -6,3 +6,7 @@ class Add_food(forms.Form):
     Name = forms.CharField()
     Price = forms.FloatField()
     Quantity = forms.IntegerField()
+
+
+class Remove_food(forms.Form):
+    Id = forms.IntegerField()
